@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shopping website</title>
+    <style>
+        body{
+           background-color: rgb(84, 84, 84);
+        }
+        .page-div {
+            height: 100vh; 
+            width: 100%; 
+            margin: 0; 
+            padding: 0;
+            border: 3px solid #000; 
+
+        }
+        .center-div {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            border: 2px solid black; 
+            background-color: cadetblue;
+            margin: 1px;
+        }
+
+        h1 {
+            margin: 0; 
+        }
+        .heading div{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid black;
+        }
+        .login-box-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(97, 94, 91);
+        }
+        .form-outerdiv{
+            display: inline;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: aquamarine;
+
+        }
+        .buttondiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  
+</head>
+<body>
+    <div class="page-div">
+    <div class="center-div">
+        <h1>User Login Area</h1>
+    </div>
+    <div class="login-box-div">
+        <div class="form-outerdiv">
+        <div class="heading-div"><h1>Login Here</h1></div>
+        <br>
+        <form action="#" method="post" id="loginform">
+        <div class="form-div">
+        <label for="username">UserName:</label>
+        <input type="text" id="username" name="username" required>
+        </div>
+        <br>
+        <div class="form-div">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        </div>
+        <div class="buttondiv">
+        <button type="button" id="loginbtn" class="login-btn">LOGIN</button>
+        </div>
+        </form>            
+    </div>
+ </div>
+ </div>
+ <script>
+    document.getElementById("loginbtn").onclick = function() {
+
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+  
+   
+      if (username.trim() === "") {
+        alert("Username is required!");
+        return false;
+      }
+  
+      if (password.trim() === "") {
+        alert("Password is required!");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+  
+      alert("Login successful!");
+      window.location.href = "http://127.0.0.1:5500/nextIndex.html"; 
+    };
+  </script>
+</body>
+</html>

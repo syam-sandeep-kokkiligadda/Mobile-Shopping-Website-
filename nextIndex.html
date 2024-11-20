@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shopping website</title>
+    <link rel="stylesheet" href="nextStyle.css">
+    <script src="script.js"></script>
+</head>       
+<body>
+    <div class="body-div">
+     <div>
+
+     </div>   
+    <div class="d1"><h1 class="h1-div"> Welcome to Mobile Shopping website</h1></div>
+    <div class="navbar-div">
+    <nav class="navbar">
+        <ul class="nav-links">
+       <!--     <div class="search-div">
+            <input type="text" placeholder="Search here">
+            </div>  -->
+            <li><a href="http://127.0.0.1:5500/nextIndex.html">Products</a></li>
+            <li><a href="http://127.0.0.1:5500/cart.html" >Cart</a></li>
+            <!--<li><a href="" id="login-nav">My Orders</a></li> -->
+            <li><a href="http://127.0.0.1:5500/MyAccount.html">My Account</a></li>
+            <div class="logdiv"><button type="button" onclick="logout()" class="logoutbtn">Logout</button></div>
+        </ul>
+    </nav>
+    </div>
+    <div class="trend-div">
+        <div><h1 class="h3-div">Mobiles</h1></div>
+       <div class="grid-container">
+<!--item 1-->
+        <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung S23 Ultra</h2></div>
+            <div class="specidic">
+            <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |100 MP rear Camera <br>64 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="./TrendingImages/s23.jpg" alt="Image 1" class="grid-item">
+            <div class="price-bar">
+            <p>Price per unit: INR<span id="unitPrice1">1,20,000 </span></p>
+            <p>Total Price: INR<span id="totalPrice1">1,20,000</span></p>
+            </div>
+            <div class="quantity-controls">
+            <button onclick="decreaseQuantity1()">-</button>
+            <span id="quantity1" class="numsize">1</span>
+            <button onclick="increaseQuantity1()">+</button>
+            </div>
+            <button class="add-to-cart-button" onclick="addToCart1()">Add to Cart</button>
+        </div>
+<!--item2-->
+        <div class="itemdiv">
+          <div class="mobilehead"><h2 class="mobileh2">Pixel 9 pro</h2></div>
+          <div class="specidic">
+          <h5>Specifications :</h5>8GB RAM | 128 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 5500 Mah Battery
+          </div>
+          <br>
+          <img src="./TrendingImages/pixel9pro.webp" alt="Image 1" class="grid-item">
+          <div class="price-bar">
+          <p>Price per unit: INR<span id="unitPrice2">95000 </span></p>
+          <p>Total Price: INR<span id="totalPrice2">95000</span></p>
+          </div>
+          <div class="quantity-controls">
+          <button onclick="decreaseQuantity2()">-</button>
+          <span id="quantity2" class="numsize">1</span>
+          <button onclick="increaseQuantity2()">+</button>
+          </div>
+          <button class="add-to-cart-button" onclick="addToCart2()">Add to Cart</button>
+      </div>
+
+<!--item3-->
+      <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Realme 12 Pro+ 5G</h2></div>
+        <div class="specidic">
+        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Dimensity 7300 |200 MP rear Camera <br>64 MP front | 5600 Mah Battery
+        </div>
+        <br>
+        <img src="./TrendingImages/realme12proplus.webp" alt="Image 1" class="grid-item">
+        <div class="price-bar">
+        <p>Price per unit: INR<span id="unitPrice3">24999 </span></p>
+        <p>Total Price: INR<span id="totalPrice3">24999</span></p>
+        </div>
+        <div class="quantity-controls">
+        <button onclick="decreaseQuantity3()">-</button>
+        <span id="quantity3" class="numsize">1</span>
+        <button onclick="increaseQuantity3()">+</button>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart3()">Add to Cart</button>
+    </div>
+
+<!--item 4-->
+    <div class="itemdiv">
+      <div class="mobilehead"><h2 class="mobileh2">Nothing 2a</h2></div>
+      <div class="specidic">
+      <h5>Specifications :</h5>8GB RAM | 128 ROM <br>Snapdragon 7sGen1 |50 MP rear Camera <br>12 MP front | 5500 Mah Battery
+      </div>
+      <br>
+      <img src="./TrendingImages/nothing2a.webp" alt="Image 1" class="grid-item">
+      <div class="price-bar">
+      <p>Price per unit: INR<span id="unitPrice4">23999 </span></p>
+      <p>Total Price: INR-<span id="totalPrice4">23999</span></p>
+      </div>
+      <div class="quantity-controls">
+      <button onclick="decreaseQuantity4()">-</button>
+      <span id="quantity4" class="numsize">1</span>
+      <button onclick="increaseQuantity4()">+</button>
+      </div>
+      <button class="add-to-cart-button" onclick="addToCart4()">Add to Cart</button>
+  </div>
+
+<!--item 5-->
+  <div class="itemdiv">
+    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+    <div class="specidic">
+    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+    </div>
+    <br>
+    <img src="images.jpeg" alt="Image 1" class="grid-item">
+    <div class="price-bar">
+    <p>Price per unit: INR<span id="unitPrice">15000 </span></p>
+    <p>Total Price: INR<span id="totalPrice">15000</span></p>
+    </div>
+    <div class="quantity-controls">
+    <button onclick="decreaseQuantity()">-</button>
+    <span id="quantity" class="numsize">1</span>
+    <button onclick="increaseQuantity()">+</button>
+    </div>
+    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+</div>
+
+<!--item 5-->
+<div class="itemdiv">
+  <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+  <div class="specidic">
+  <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+  </div>
+  <br>
+  <img src="images.jpeg" alt="Image 1" class="grid-item">
+  <div class="price-bar">
+  <p>Price per unit: INR<span id="unitPrice">15000 </span></p>
+  <p>Total Price: INR<span id="totalPrice">15000</span></p>
+  </div>
+  <div class="quantity-controls">
+  <button onclick="decreaseQuantity()">-</button>
+  <span id="quantity1" class="numsize">1</span>
+  <button onclick="increaseQuantity()">+</button>
+  </div>
+  <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+</div>
+
+<!--item 7-->
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+
+     <!--item8-->     
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+
+      <!--item 9-->    
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+
+          <!--item 10-->
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+
+          <!---item 11-->
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+          <!--item 12-->
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+
+          <!---item 13-->
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+
+          <!--item 14-->
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+
+          <!--item 15-->
+          <div class="itemdiv">
+            <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+            <div class="specidic">
+                <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+            </div>
+            <br>
+            <img src="images.jpeg" alt="Image 1" class="grid-item">
+          
+            <!-- Quantity control -->
+            <div class="quantity-controls">
+              <button onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="numsize">1</span>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <!--add to cart-->
+            <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+          </div>
+       </div>
+        </div>
+
+
+        <!-- for tablets-->
+        <div class="trend-div">
+            <div><h1 class="h3-div">Tablets</h1></div>
+           <div class="grid-container">
+
+            <!--item 1-->
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Apple iPad 2024</h2></div>
+                <div class="specidic">
+                <h5>Specifications :</h5>6GB RAM | 512GB ROM <br>M4 chip |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="./MobilesImages/appleipadpro.webp" alt="Image 1" class="grid-item">
+                <div class="price-bar">
+                <p>Price per unit: INR<span id="unitPrice16">1,34,000 </span></p>
+                <p>Total Price: INR<span id="totalPrice16">1,34,000</span></p>
+                </div>
+                <div class="quantity-controls">
+                <button onclick="decreaseQuantity16()">-</button>
+                <span id="quantity16" class="numsize">1</span>
+                <button onclick="increaseQuantity16()">+</button>
+                </div>
+                <button class="add-to-cart-button" onclick="addToCart16()">Add to Cart</button>
+            </div>
+
+
+              <!--item 2-->
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung Galaxy Tab A9</h2></div>
+                <div class="specidic">
+                <h5>Specifications :</h5>6GB RAM | 128GB ROM <br>M4 chip |48 MP rear Camera <br>16 MP front | 7040 Mah Battery
+                </div>
+                <br>
+                <img src="./MobilesImages/galaxytaba9.webp" alt="Image 1" class="grid-item">
+                <div class="price-bar">
+                <p>Price per unit: INR<span id="unitPrice17">25999 </span></p>
+                <p>Total Price: INR<span id="totalPrice17">25999</span></p>
+                </div>
+                <div class="quantity-controls">
+                <button onclick="decreaseQuantity17()">-</button>
+                <span id="quantity17" class="numsize">1</span>
+                <button onclick="increaseQuantity17()">+</button>
+                </div>
+                <button class="add-to-cart-button" onclick="addToCart17()">Add to Cart</button>
+            </div>
+
+
+           <!--item 3-->   
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+              <div class="itemdiv">
+                <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                <div class="specidic">
+                    <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                </div>
+                <br>
+                <img src="images.jpeg" alt="Image 1" class="grid-item">
+              
+                <!-- Quantity control -->
+                <div class="quantity-controls">
+                  <button onclick="decreaseQuantity()">-</button>
+                  <span id="quantity" class="numsize">1</span>
+                  <button onclick="increaseQuantity()">+</button>
+                </div>
+                <!--add to cart-->
+                <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+              </div>
+           </div>
+            </div>
+
+            <!-- foldable phones-->
+
+            <div class="trend-div">
+                <div><h1 class="h3-div">Accesories</h1></div>
+               <div class="grid-container">
+                <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+                  <div class="itemdiv">
+                    <div class="mobilehead"><h2 class="mobileh2">Samsung</h2></div>
+                    <div class="specidic">
+                        <h5>Specifications :</h5>8GB RAM | 256 ROM <br>Snapdragon 8Gen1 |50 MP rear Camera <br>12 MP front | 6000 Mah Battery
+                    </div>
+                    <br>
+                    <img src="images.jpeg" alt="Image 1" class="grid-item">
+                  
+                    <!-- Quantity control -->
+                    <div class="quantity-controls">
+                      <button onclick="decreaseQuantity()">-</button>
+                      <span id="quantity" class="numsize">1</span>
+                      <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <!--add to cart-->
+                    <button class="add-to-cart-button" onclick="addToCart()">Add to Cart</button>
+                  </div>
+               </div>
+                </div>
+               </div>
+                </div>
+</div>
+<script>
+function logout(){
+   window.location.href="index.html"
+}
+//for 1st item
+let unitPrice1 = 120000;
+
+function updateTotalPrice1() {
+    let quantity = parseInt(document.getElementById('quantity1').textContent);
+    document.getElementById('totalPrice1').textContent = (unitPrice1 * quantity).toFixed(2);
+}
+
+function increaseQuantity1() {
+    let quantityElement = document.getElementById('quantity1');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = currentQuantity + 1;
+    updateTotalPrice1(); 
+}
+
+function decreaseQuantity1() {
+    let quantityElement = document.getElementById('quantity1');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    if (currentQuantity > 1) {
+        quantityElement.textContent = currentQuantity - 1;
+        updateTotalPrice1();
+    }
+}
+function addToCart1() {
+    let item = {
+        name: 'Samsung S23 Ultra',
+        specifications: '8GB RAM | 256 ROM, Snapdragon 8Gen1 | 100 MP rear Camera, 64 MP front | 6000 Mah Battery',
+        quantity: parseInt(document.getElementById('quantity1').textContent),
+        unitPrice: unitPrice,
+        totalPrice: parseFloat(document.getElementById('totalPrice1').textContent),
+        image: './TrendingImages/s23.jpg'
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+    if (existingItem) {
+        existingItem.quantity += item.quantity;
+        existingItem.totalPrice += item.totalPrice;
+    } else {
+        cart.push(item);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+}  
+
+//for 2nd item
+let unitPrice2 = 95000;
+
+function updateTotalPrice2() {
+    let quantity = parseInt(document.getElementById('quantity2').textContent);
+    document.getElementById('totalPrice2').textContent = (unitPrice2 * quantity).toFixed(2);
+}
+
+function increaseQuantity2() {
+    let quantityElement = document.getElementById('quantity2');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = currentQuantity + 1;
+    updateTotalPrice2(); 
+}
+
+function decreaseQuantity2() {
+    let quantityElement = document.getElementById('quantity2');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    if (currentQuantity > 1) {
+        quantityElement.textContent = currentQuantity - 1;
+        updateTotalPrice2();
+    }
+}
+function addToCart2() {
+    let item = {
+        name: 'Pixel 9 Pro',
+        specifications: '8GB RAM | 128GB ROM, Snapdragon 8Gen1 | 100 MP rear Camera, 64 MP front | 5500 Mah Battery',
+        quantity: parseInt(document.getElementById('quantity2').textContent),
+        unitPrice: unitPrice,
+        totalPrice: parseFloat(document.getElementById('totalPrice2').textContent),
+        image: '/TrendingImages/pixel9pro.webp'
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+    if (existingItem) {
+        existingItem.quantity += item.quantity;
+        existingItem.totalPrice += item.totalPrice;
+    } else {
+        cart.push(item);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+}  
+
+//for 3rd item
+
+let unitPrice3 = 24999;
+
+function updateTotalPrice3() {
+    let quantity = parseInt(document.getElementById('quantity3').textContent);
+    document.getElementById('totalPrice3').textContent = (unitPrice3 * quantity).toFixed(2);
+}
+
+function increaseQuantity3() {
+    let quantityElement = document.getElementById('quantity3');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = currentQuantity + 1;
+    updateTotalPrice3(); 
+}
+
+function decreaseQuantity3() {
+    let quantityElement = document.getElementById('quantity3');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    if (currentQuantity > 1) {
+        quantityElement.textContent = currentQuantity - 1;
+        updateTotalPrice3();
+    }
+}
+function addToCart3() {
+    let item = {
+        name: 'Realme 12 Pro+',
+        specifications: '8GB RAM | 256 ROM, Snapdragon 8Gen1 | 200 MP rear Camera, 64 MP front | 5600 Mah Battery',
+        quantity: parseInt(document.getElementById('quantity3').textContent),
+        unitPrice: unitPrice,
+        totalPrice: parseFloat(document.getElementById('totalPrice3').textContent),
+        image: './TrendingImages/realme12proplus.webp'
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+    if (existingItem) {
+        existingItem.quantity += item.quantity;
+        existingItem.totalPrice += item.totalPrice;
+    } else {
+        cart.push(item);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+}  
+
+//for  4 item
+
+let unitPrice4 = 24999;
+
+function updateTotalPrice4() {
+    let quantity = parseInt(document.getElementById('quantity4').textContent);
+    document.getElementById('totalPrice4').textContent = (unitPrice3 * quantity).toFixed(2);
+}
+
+function increaseQuantity4() {
+    let quantityElement = document.getElementById('quantity4');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = currentQuantity + 1;
+    updateTotalPrice4(); 
+}
+
+function decreaseQuantity4() {
+    let quantityElement = document.getElementById('quantity4');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    if (currentQuantity > 1) {
+        quantityElement.textContent = currentQuantity - 1;
+        updateTotalPrice4();
+    }
+}
+function addToCart4() {
+    let item = {
+        name: 'Nothing Phone 2a',
+        specifications: '8GB RAM | 128 ROM, Snapdragon 8Gen1 | 50 MP rear Camera, 12 MP front | 5500 Mah Battery',
+        quantity: parseInt(document.getElementById('quantity4').textContent),
+        unitPrice: unitPrice,
+        totalPrice: parseFloat(document.getElementById('totalPrice4').textContent),
+        image: './TrendingImages/nothing2a.webp'
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+    if (existingItem) {
+        existingItem.quantity += item.quantity;
+        existingItem.totalPrice += item.totalPrice;
+    } else {
+        cart.push(item);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+}  
+
+
+//for tablets
+
+let unitPrice16 = 134000;
+
+function updateTotalPrice16() {
+    let quantity = parseInt(document.getElementById('quantity16').textContent);
+    document.getElementById('totalPrice16').textContent = (unitPrice16 * quantity).toFixed(2);
+}
+
+function increaseQuantity16() {
+    let quantityElement = document.getElementById('quantity16');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = currentQuantity + 1;
+    updateTotalPrice16(); 
+}
+
+function decreaseQuantity16() {
+    let quantityElement = document.getElementById('quantity16');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    if (currentQuantity > 1) {
+        quantityElement.textContent = currentQuantity - 1;
+        updateTotalPrice16();
+    }
+}
+function addToCart16() {
+    let item = {
+        name: 'Apple iPad 2024',
+        specifications: '6GB RAM | 128 ROM, M4 | 50 MP rear Camera, 12 MP front | 6000 Mah Battery',
+        quantity: parseInt(document.getElementById('quantity16').textContent),
+        unitPrice: unitPrice,
+        totalPrice: parseFloat(document.getElementById('totalPrice16').textContent),
+        image: './MobilesImages/appleipadpro.webp'
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+    if (existingItem) {
+        existingItem.quantity += item.quantity;
+        existingItem.totalPrice += item.totalPrice;
+    } else {
+        cart.push(item);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+}  
+
+
+//item 17
+let unitPrice17 = 25999;
+
+function updateTotalPrice17() {
+    let quantity = parseInt(document.getElementById('quantity17').textContent);
+    document.getElementById('totalPrice17').textContent = (unitPrice17 * quantity).toFixed(2);
+}
+
+function increaseQuantity17() {
+    let quantityElement = document.getElementById('quantity17');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    quantityElement.textContent = currentQuantity + 1;
+    updateTotalPrice17(); 
+}
+
+function decreaseQuantity17() {
+    let quantityElement = document.getElementById('quantity17');
+    let currentQuantity = parseInt(quantityElement.textContent);
+    if (currentQuantity > 1) {
+        quantityElement.textContent = currentQuantity - 1;
+        updateTotalPrice17();
+    }
+}
+function addToCart17() {
+    let item = {
+        name: 'Samsung Galaxy Tab A9',
+        specifications: '6GB RAM | 128 ROM, M4 | 48 MP rear Camera, 16 MP front | 7040 Mah Battery',
+        quantity: parseInt(document.getElementById('quantity17').textContent),
+        unitPrice: unitPrice,
+        totalPrice: parseFloat(document.getElementById('totalPrice17').textContent),
+        image: './MobilesImages/appleipadpro.webp'
+    };
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+    if (existingItem) {
+        existingItem.quantity += item.quantity;
+        existingItem.totalPrice += item.totalPrice;
+    } else {
+        cart.push(item);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.href = 'cart.html';
+}  
+
+
+ </script>
+<div class="footer">
+    <footer>@2024 Mobile shopping website</footer>
+</div>
+</body>
+</html>

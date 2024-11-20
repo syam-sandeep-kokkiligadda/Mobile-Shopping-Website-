@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shopping website</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        .cart-item {
+            border: 1px solid #0d0b0b;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: white;
+        }
+        .cart-item img {
+            width: 100px;
+            height: auto;
+        }
+        .cart-actions {
+            margin-top: 10px;
+        }
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .buy-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .headerdiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            background-color: #0056b3;
+        }
+        .totaldiv{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="totaldiv">
+    <div class="headerdiv">
+    <h2>Cart Items</h2>
+    </div>
+    <div id="cartItems"></div>
+    <div class="buy-section">
+        <h3 id="totalPriceDisplay"></h3>
+        <button id="buyNow" onclick="proceedToPayment()">Buy Now</button>
+    </div>
+    </div>
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+        function displayCart() {
+            let cartItemsContainer = document.getElementById('cartItems');
+            let totalCartPrice = 0;
+
+            cartItemsContainer.innerHTML = ''; 
+
+            if (cart.length > 0) {
+                cart.forEach((item, index) => {
+                    totalCartPrice += item.totalPrice;
+
+                    let itemElement = document.createElement('div');
+                    itemElement.classList.add('cart-item');
+                    itemElement.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}">
+                        <h3>${item.name}</h3>
+                        <p>${item.specifications}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                        <p>Total Price: INR ${item.totalPrice}</p>
+                        <div class="cart-actions">
+                            <button onclick="removeItem(${index})">Remove</button>
+                        </div>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                });
+
+             
+                document.getElementById('totalPriceDisplay').textContent = `Total Cart Price: INR ${totalCartPrice}`;
+            } else {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+                document.getElementById('totalPriceDisplay').textContent = '';
+            }
+        }
+
+      
+        function removeItem(index) {
+            cart.splice(index, 1); 
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCart();
+        }
+
+       
+        function proceedToPayment() {
+            let totalCartPrice = cart.reduce((total, item) => total + item.totalPrice, 0);
+            if (totalCartPrice > 0) {
+                localStorage.setItem('totalPrice', totalCartPrice); 
+                window.location.href = 'payment.html'; 
+            } else {
+                alert('Your cart is empty!');
+            }
+        }
+        window.onload = displayCart;
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shopping Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>       
+<body>
+    <div class="body-div">
+    <div class="d1"><h1 class="h1-div">Mobile Shopping website</h1></div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            <li>
+                
+                    <button onclick="myFunction()" class="dropbtn">Categories</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Mobiles</a>
+                      <a href="#">Tablets</a>
+                      <a href="#">Foldable Phones</a>
+                    </div>
+            </li>
+            <li><a href="http://127.0.0.1:5500/Login.html" id="login-nav">Login</a></li>
+            <li><a href="http://127.0.0.1:5500/Register.html">Register</a></li>
+            <li><a href="http://127.0.0.1:5500/Feedback.html">Feedback</a></li>
+            <li><a href="http://127.0.0.1:5500/Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container-div">
+        <div class="login-container">
+        <h2 class="div-heading">Member Login</h2>
+        <form action="#" method="post" id="login-form">
+            <div class="form-group">
+                <label for="username">UserName:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <button type="button" class="login-btn" id="loginbtn">LOGIN</button>
+            <br><br>
+            <div class="new-user">
+                <a href="Register.html">New User?</a>
+            </div>
+            
+        </form>
+    </div>
+    <div class="image-div">
+    <img src="demo.avif">
+    </div>
+    <img src="banner.jpg" alt="banner">
+    <!--
+    <div class="iframe-div">
+        <iframe src="https://youtu.be/37KohMnlP7Q?si=tSpCCh2zB73gGOLj" title="iframe"></iframe>
+    </div>
+-->
+    </div>
+<div class="trend-div">
+    <div><h2 class="h3-div">Trending Mobiles</h2></div>
+   <div class="grid-container">
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Samsung S23 Ultra</h2></div>
+        <div class="pricdiv"><h3>From 89999 ₹/-</h3></div>
+        <img src="./TrendingImages/s23.jpg" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Iphone 16 Pro max</h2></div>
+        <div class="pricdiv"><h3>From 1,69,000 ₹/-</h3></div>
+        <img src="./TrendingImages/ip16promax.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Iphone 15 Pro max</h2></div>
+        <div class="pricdiv"><h3>From 1,39,999 ₹/-</h3></div>
+        <img src="./TrendingImages/ip15promax.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Pixel 9  Pro</h2></div>
+        <div class="pricdiv"><h3>From 69,999 ₹/-</h3></div>
+        <img src="./TrendingImages/pixel9pro.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2"><h2>Nothing Phone 2a</h2></div>
+        <div class="pricdiv"><h3>From 21,999 ₹/-</h3></div>
+        <img src="./TrendingImages/nothing2a.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Realme 12x 5G</h2></div>
+        <div class="pricdiv"><h3>From 15,999 ₹/-</h3></div>
+        <img src="./TrendingImages/realme.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Infinix note 40 Pro</h2></div>
+        <div class="pricdiv"><h3>From 23,999 ₹/-</h3></div>
+        <img src="./TrendingImages/infinix40pro.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Iphone 15 plus</h2></div>
+        <div class="pricdiv"><h3>From 79,999 ₹/-</h3></div>
+        <img src="TrendingImages/ip15plus.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Moto Edge50 Fusion</h2></div>
+        <div class="pricdiv"><h3>From 25,999 ₹/-</h3></div>
+        <img src="./TrendingImages/motofusion.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Galaxy Z Flip6</h2></div>
+        <div class="pricdiv"><h3>From 98,000 ₹/-</h3></div>
+        <img src="./TrendingImages/galaxyzflip6.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Vivo T3 pro 5G</h2></div>
+        <div class="pricdiv"><h3>From 27,999 ₹/-</h3></div>
+        <img src="./TrendingImages/vivot3pro.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Samsung Galaxy g85</h2></div>
+        <div class="pricdiv"><h3>From 12,999 ₹/-</h3></div>
+        <img src="./TrendingImages/samsungg85.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">CMF phone 1</h2></div>
+        <div class="pricdiv"><h3>From 14,999 ₹/--</h3></div>
+        <img src="./TrendingImages/cmfphone1.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Realme 12 Pro+ 5G</h2></div>
+        <div class="pricdiv"><h3>From 24,999 ₹/-</h3></div>
+        <img src="./TrendingImages/realme12proplus.webp" alt="Image 1" class="grid-item">
+    </div >
+    <div class="itemdiv">
+        <div class="mobilehead"><h2 class="mobileh2">Poco c65</h2></div>
+        <div class="pricdiv"><h3>From 9,999 ₹/-</h3></div>
+        <img src="./TrendingImages/pococ65.webp" alt="Image 1" class="grid-item">
+    </div >
+   </div>
+    </div>
+<div class="footer">
+    <footer class="footerr"><div class="footerdiv">
+        @2024 Mobile shopping website<br>
+        email : mobileshoppingwebiste@gmail.com<br>
+        </div>
+    </footer>
+</div>
+</div>
+<script>
+    document.getElementById("loginbtn").onclick = function() {
+
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+  
+   
+      if (username.trim() === "") {
+        alert("Username is required!");
+        return false;
+      }
+  
+      if (password.trim() === "") {
+        alert("Password is required!");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+  
+      alert("Login successful!");
+      window.location.href = "http://127.0.0.1:5500/nextIndex.html"; 
+    };
+  </script>
+</body>
+</html>
